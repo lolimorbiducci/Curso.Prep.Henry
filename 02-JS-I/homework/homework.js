@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = "hola";
+const nuevaString = 'hola';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 5;
@@ -190,7 +190,7 @@ function obtenerSaludo(nombre) {
   // "Martin" -> "Hola Martin!"
   // Tu código:
   //return 'Hola ' + nombre + '!';
-  //`comillas`
+  //`comillas` 
   return `Hola ${nombre}!`
 }
 
@@ -232,8 +232,7 @@ function esVocal(letra){
   //Escribe tu código aquí 
   if (letra.length > 1) {
     return "Dato incorrecto";
-  } 
-  
+} 
   if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra == 'u') {
     return "Es vocal"
   } 
