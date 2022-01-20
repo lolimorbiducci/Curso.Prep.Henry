@@ -1,0 +1,77 @@
+VARIABLES
+    Las variables son palabras claves que sirven para almacenar el valor de algo, a declararlas
+    podemos ponerles un nombre y luego "llamarlas" más adelante; con solo escribir su nombre
+    estariamos "llamando" ese valor. 
+
+        var nombreDeLaVariable = 'Valor de la variable';
+    
+    El valor de una variable puede ser un texto, un numero, verdadero o falso, o una funcion.
+    
+    Otro detalle a aclarar es que existen distintos tipos de variables (cambian las palabras clave 
+    y la forma que tienen de trabajar), estas pueden ser: var, const y let
+    pero a continuacion solo explicaremos las variables de tipo var.
+    
+    STRINGS
+        Cuando hablamos de strings hacemos referencia a bloques de texto y siempre se escriben entre 
+        comillas, ya sean simples o dobles ("" o '').
+
+        Declaremos una variable de ejemplo
+            var marcaDeAuto = "Ford";
+        donde marcaDeAuto es el nombre de la variable y "Ford" (un string) es el valor que le asignamos.
+
+    NUMBERS
+        Además dentro de las variables podemos declarar numeros, estos pueden ser negativos o positivos
+        y no llevan comillas.
+       
+        Declaremos una variable de ejemplo 
+            var nroPositivo = 24;
+            var nroNegativo = -5;
+        donde nroPositivo es el nombre de la variable y "24" su valor.
+
+FUNCIONES (argumentos, `return`)
+    
+    Las funciones son un tipo de objeto invocable, en estas se pueden realizar una serie de declaraciones
+    para ejecutar una tarea especifica.
+    
+    Existen distintas formas de construir una funcion, la que explicaremos es la siguiente:
+           
+            Function nombreFuncion (argumento1, argumento2) {
+                return
+            }
+
+    1) Para utilizar una funcion debemos primero definirla; para esto utilizamos la palabra function, que
+        indicará que lo que viene a continuacion es una funcion.
+    2) Las funciones pueden ser anonimas, pero lo recomendable es nombrarlas para tener un código organizado.
+    3) Lo que se encuentra entre parentesis es el argumento, ahi podremos declarar variables para luego poder
+        llamarlas e iniciar su valor. 
+    4) Entre corchetes escribimos el codigo que queremos ejecutar, en el caso del ejemplo estamos pidiendo
+        que el codigo "retorne a..." o devuelva tal cosa.  
+
+    Vamos con algunos ejemplos para entender como funcionan los argumentos y el return
+
+        Declaro una funcion function
+            
+            function suma (num1, num2) {
+                return num1 + num2;
+            }
+            suma (3,4);
+            //la consola devuelve el valor 7.
+
+        En la ultima linea de codigo estamos llamando a la funcion SUMA poniendole valores
+        al argumento. Luego de leer esto, se ejecuta el codigo dentro de los corchetes, donde
+        pide que devuelva el resultado del num1 + num2.
+
+        Otra forma de declarar una funcion de suma, en este caso usando una variable dentro.
+
+            function sumar (a, b){
+                var suma = a + b;
+                return suma;
+            }
+            sumar (1, 2);
+            //la consola devuelve el valor 3
+
+
+DECLARACIONES `if` `else if` `else`
+
+
+VALORES BOOLEANOS (`true`, `false`)
