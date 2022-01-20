@@ -70,8 +70,42 @@ FUNCIONES (argumentos, `return`)
             sumar (1, 2);
             //la consola devuelve el valor 3
 
-
 DECLARACIONES `if` `else if` `else`
+    Las declaraciones se leen de esta manera:
+        Si se cumple la condicion A, entonces retorna lo del corchete. Sino, pasa a ver la
+        condicion B, si se cumple retorna lo del chorchete, sino pasa a la condicion C. 
+        if= si tal cosa... 
+        else if= sino tal otra...
+        else= sino tal otra...
 
+        
+    function esVocal (letra){
+        if (letra.length > 1 ){
+            return false;
+        } else if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra == 'u'){
+            return true;
+        } else {
+            return false
+        }
+    }
+    
+    En esta funcion lo que dice es que si la letra ingresada es mayor a 1 caracter, entonces
+    debe devolver "false", en caso de que sea menor a 1 caracter, pasa al siguiente argumento.
+    En la linea else if, pide que se respete la condicion de que sea la letra 'a' o la 'e' o 
+    la 'i' o la 'o' o la 'u'. En caso de tratarse de alguna de las vocales debe devolver "true",
+    sino pasa a la ultima linea de codigo y devuelve el valor "false".
 
-VALORES BOOLEANOS (`true`, `false`)
+    function puedeManejar (edad){
+        if (edad = 18) {
+        return true;
+        } return false;
+        } 
+    puedeManejar (22)
+
+    En este ejemplo no es necesario el uso de else, solo con return es suficiente para devolver
+    un resultado.
+
+    VALORES BOOLEANOS 
+    Cuando hablamos de valores booleanos tenemos dos tipos de respuesta, correcto o incorrecto,
+    verdadero o falso, 0 o 1, todo o nada. En Javascript usamos booleanos para significar 
+    true or false (como en el ejemplo anterior).
