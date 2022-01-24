@@ -1,0 +1,66 @@
+
+`for`
+For es una de las palabras clave que utilizamos para crear bucles.
+Los bucles son programas donde el codigo se ejecuta ciclicamente hasta encontrar una condicion 
+que lo haga detener. Tambíen existen bucles infinitos, pero estos pueden poner en riesgo nuestro
+proyecto o computadora, por lo que es necesario que en algun momento puedan finalizar.
+
+Como dijimos, un bucle es  un codigo que se ejecuta hasta llegar a una condicion que devuelva
+el resultado true. 
+
+Sintaxis ejemplo:
+    for (let i=0; i<10; i++) {
+        console.log (i);
+    }
+
+Donde:
+for > palabra clave
+i=0 > declarar variable
+i<10 > expresion condicional
+i++ > incremento variable (mismo que decir i+1)
+console.log (i) > código a ejecutar
+
+En este ejemplo lo que ocurre es que la variable i, inicialmente tiene un valor 0 y va a incrementar su valor 
+en +1 por cada ejecucion del programa, hasta que se cumpla el condicional i<10 (una vez llegue a ese valor el
+bucle se detiene)
+
+ OPERADORES LÓGICOS  
+ Se utilizan para combinar dos operaciones de igualdad y determinar si alguna de las dos operaciones son verdaderas,
+ si ambas lo son, o si ninguna lo es. A continuacion explicaré 3 operadores lógicos muy utilizados.
+
+ AND
+ Se expresa con `&&`, solo devolvera el booleano "true" si ambas expresiones de igualdad son verdaderas.
+ Ejemplo:
+    if (100>10 && 80===80) {
+        console.log ('ambas son ciertas, ejecuta el codigo');
+    }
+
+    if (10===11 && 10>9) {
+        console.log ('una es incorrecta, no ejecuta el codigo');
+    }
+ 
+ OR
+ Se expresa con `||` y sirve para decir "o". Devolvera true si una expresion (o ambas) son true.
+ Ejemplo:
+    if (10===10 || 100>10) {
+        console.log ('ambas son true, ejecuta el codigo');
+    }
+
+    if (10<5 || 10>5) {
+        console.log ('una es true, ejecuta el codigo');
+    }
+
+    if (10<6 || 5===9) {
+        console.log ('ambas son false, no ejecuta el codigo');
+    }
+  
+ NOT
+ Se expresa con `!`, devolverá el valor booleano opuesto de lo que se le pasa.
+ Ejemplo: 
+    if (!false) {
+        console.log ('El ! devolvera true, porque es lo contrario de false. Por lo tanto, ejecuta el codigo');
+    }
+
+    if (!(1===1)) {
+        console. log ('1 es igual a 1, pero el ! devuelve lo contrario. Por lo tanto no ejecuta el codigo');
+    }
