@@ -200,7 +200,7 @@ function mayorACien(array) {
     if (array [i]>100) {
       enteros.push (array [i]);
     } 
-  } return enteros
+  } return enteros;
 }
 
 
